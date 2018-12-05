@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+  <script>
+  async function getData()
+    {
+      //await the response of the fetch call
+      let response = await fetch('https://sandbox-api.brewerydb.com/v2/beer/?key=93542a7cec278561cce381132d05be89&format=json');
+      //proceed once the first promise is resolved.
+      let data = await response.json()
+      //proceed only when the second promise is resolved
+      return data;
+    }
+    //call getData function
+    getData()
+    .then(data => console.log(data));//log the data
+  </script>
+</body>
+
+</html>
