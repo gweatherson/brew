@@ -1,0 +1,31 @@
+ @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,600');
+
+:root {
+	--chocolate: #4D3C23;
+	--yellow: #F2C849;
+	--blue: #BFD4D9;
+}
+
+body {
+	font-family: 'Noto Serif TC', serif;
+	background-color: var(--chocolate);
+	color: var(--blue);
+}
+
+h2 {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+a {
+	color: var(--yellow);	
+}
+
+div {
+	display: block;
+	margin-bottom: 40px;
+}
+
+a {
+	display: block;
+}
